@@ -1,0 +1,145 @@
+.i{
+    display: flex;
+    height: 100vh;
+}
+
+
+.i-left{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.i-right{
+    flex: 1;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.i-left-wrapper{
+    padding: 50px;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.i-intro{
+    font-size: 30px;
+    font-weight: 300;
+
+}
+
+.i-name{
+    font-size: 60px;
+}
+
+.i-title{
+    height: 50px;
+    overflow: hidden;
+
+}
+
+.i-title-wrapper{
+    height: 100%;
+    animation: move 10s ease-in-out infinite alternate;
+}
+
+
+@keyframes move{
+    25%{
+        transform: translateY(-50px);
+    }
+    50%{
+        transform: translateY(-100px);
+    }
+    75%{
+        transform: translateY(-150px);
+    }
+    100%{
+        transform: translateY(-200px);
+    }
+}
+
+
+
+.i-title-item{
+    height: 50px;
+    font-size: 30px;
+    font-weight: bold;
+    color: #59b256;
+    display: flex;
+    align-items: center;
+
+}
+
+.i-slogan{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+
+.i-bg{
+    clip-path: polygon(46% 0, 47% 51%, 100% 100%, 41% 100%, 0% 50%, 0 0);
+    background-color: #59b256;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0 ;
+}
+
+.i-img{
+    width: 50%;
+    height: 50%;
+    border-radius: 50%;
+    margin-right: 300px;
+    /* object-fit: cover; */
+    position: absolute ;
+}
+
+.i-scroll-btn{
+    width: 100px;
+    height: 100px;
+    border: 2px solid #59b256;
+    background-color: #59b256;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    cursor: pointer;
+    position: absolute;
+    bottom: 30px;
+    right: 50%;
+
+}
+
+
+.i-scroll-btn:hover{
+    opacity: .7;
+}
+
+.i-scroll-btn::before,.i-scroll-btn::after{
+    content:"";
+    border: 2px solid #59b256;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    animation: do 2s ease-in infinite;
+}
+
+.i-scroll-btn::after{
+    animation: do 2s ease-in infinite 1s;
+}
+
+@keyframes do {
+    100%{
+        transform: scale(1.5);
+        opacity: 0;
+    }
+}
