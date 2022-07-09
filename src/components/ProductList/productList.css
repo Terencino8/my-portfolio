@@ -10,3 +10,18 @@
     width: 65%;
 }
 
+.pl-title{
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.pl-desc{
+    margin: 20px 0;
+}
+
+.pl-list{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
