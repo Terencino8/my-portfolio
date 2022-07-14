@@ -3,12 +3,22 @@ import Phone from "../../img/Phone.png"
 import Email from "../../img/Mail.png"
 import Address from "../../img/Address.png"
 import { useRef } from "react";
+import emailjs from '@emailjs/browser';
 
 const Contact = () => {
     const formRef = useRef();
-
+    
+    
+    // link mail to recive messages frm site
     const handleSubmit =  (e)=>{
         e.preventDefault();
+        emailjs.sendForm('service_1uxj46c', 'template_rh2umfx', formRef.current, 'bvnhNbclyb8Ka9L3c')
+        .then((result) => {
+            console.log(result.text);
+        }, (error) => {
+            console.log(error.text);
+        });
+         
     }
   return (
     <div className='c'>
@@ -54,7 +64,7 @@ const Contact = () => {
                     <input type="text" placeholder="Name" name="user_name"/>
                     <input type="text" placeholder="subject" name="user_subject"/>
                     <input type="text" placeholder="Email" name="user_email"/>
-                    <textarea placeholder="Message" name="messsage" id="" cols="30" rows="10"></textarea>
+                    <textarea cols="30" rows="10" placeholder="message" name="messsage"></textarea>
                     <button>Submit</button>
                 </form>
             </div>
