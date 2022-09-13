@@ -1,12 +1,36 @@
-import React from 'react'
-import "./Contact.css"
-import Phone from "../../img/Phone.png"
-import Email from "../../img/Mail.png"
-import Address from "../../img/Address.png"
+// For the mailing system
+import React, { useRef, useState } from 'react';
+import "./Contact.css";
+import Phone from "../../img/Phone.png";
+import Email from "../../img/Mail.png";
+import Address from "../../img/Address.png";
+import emailjs from '@emailjs/browser';
+
+
 
 const Contact = () => {
+
+    // For the mailing system formRef
+        const formRef = useRef();
+        const [done, setDone] = useState(false)
+
+    // handleSubmit function in the form 
+        const handleSubmit = (e) =>{
+            e.preventDefault();
+            emailjs.sendForm('service_x2l9jm8', 'template_jlgdauk', formRef.current, 'nHhlasD8glUyXtoW0')
+            .then((result) => {
+                console.log(result.text);
+                setDone(true)
+            }, (error) => {
+                console.log(error.text);
+            });
+        };
+            
+        
+
+
   return (
-    <div className='c'>
+    <div className='c'>  
         <div className="c-bg"></div>
         <div className="c-wrapper">
             <div className="c-left">
@@ -43,15 +67,17 @@ const Contact = () => {
             </div>
             <div className="c-right">
                 <p className="c-desc">
-                    <b>What's your story?</b>  Gert in touch. Always freelancing if the right project comes along. me. 
+                    <b>What's your story?</b>  Get in touch. Always freelancing if the right project comes along. me. 
                 </p>
 
                 {/* Contact form To send mail  One*/}
-                <form action="">
+                <form ref={formRef} onSubmit={handleSubmit}>
                     <input type="text" placeholder="Name" name="user_name" />
-                    <input type="text" placeholder="subject" name="user_suject" />
+                    <input type="text" placeholder="subject" name="user_subject" />
                     <input type="text" placeholder="Email" name="user_email" />
-
+                    <textarea rows="5" placeholder="Message" name="message"></textarea>
+                    <button>Submit</button>
+                    {done && "Thank You For Reaching out I will Get in touch with You soonest"}
                 </form>
             </div>
         </div>
