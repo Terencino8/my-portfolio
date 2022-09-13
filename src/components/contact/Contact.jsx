@@ -1,71 +1,57 @@
-import "./contact.css"
+import React from 'react'
+import "./Contact.css"
 import Phone from "../../img/Phone.png"
 import Email from "../../img/Mail.png"
 import Address from "../../img/Address.png"
-import { useRef } from "react";
-import emailjs from '@emailjs/browser';
 
 const Contact = () => {
-    const formRef = useRef();
-    
-    
-    // link mail to recive messages frm site
-    const handleSubmit =  (e)=>{
-        e.preventDefault();
-        emailjs.sendForm('service_1uxj46c', 'template_rh2umfx', formRef.current, 'bvnhNbclyb8Ka9L3c')
-        .then((result) => {
-            console.log(result.text);
-        }, (error) => {
-            console.log(error.text);
-        });
-         
-    }
   return (
     <div className='c'>
         <div className="c-bg"></div>
         <div className="c-wrapper">
             <div className="c-left">
-                <h1 className="c-title">Let's discuss your project</h1>
+                <h1 className="c-title">Let's Discuss your project</h1>
                 <div className="c-info">
                     <div className="c-info-item">
+                        {/* Phone Icone */}
                         <img 
-                            src={Phone} 
-                            alt="" 
-                            className="c-icon"
-                        />
+                        src={Phone}
+                        alt="" 
+                        className="c-icon" />
                         +234 708 542 9640
                     </div>
-
+                    
                     <div className="c-info-item">
+                        {/* Mail Icon */}
                         <img 
-                            src={Email} 
-                            alt="" 
-                            className="c-icon"
-                        />
-                        Terencino8@gmail.com
+                        src={Email}
+                        alt="" 
+                        className="c-icon" />
+                        Terenceonyekachi@gmail.com
                     </div>
 
                     <div className="c-info-item">
+                        {/* Address Icon */}
                         <img 
-                            src={Address} 
-                            alt="" 
-                            className="c-icon"
-                        />
-                       27 Mafolukwu Road, Oshodi, Lagos Nigeria
+                        src={Address}
+                        alt="" 
+                        className="c-icon" />
+                        @27 Mafoluku Road Oshodi Lagos Nigeris
                     </div>
+                   
                 </div>
             </div>
             <div className="c-right">
-                <div className="c-desc">
-                    <b>What's your story?</b> Get in touch. Always available for freelancing 
-                    if the right project comes along. me.
-                </div>
-                <form ref={formRef} onSubmit={handleSubmit}>
-                    <input type="text" placeholder="Name" name="user_name"/>
-                    <input type="text" placeholder="subject" name="user_subject"/>
-                    <input type="text" placeholder="Email" name="user_email"/>
-                    <textarea cols="30" rows="10" placeholder="message" name="messsage"></textarea>
-                    <button>Submit</button>
+                <p className="c-desc">
+                    <b>What's your story?</b>  Gert in touch. Always freelancing if the right project comes along. me. 
+                </p>
+
+                {/* Contact form To send mail  One*/}
+                <form action="">
+                    <input type="text" placeholder="Name" name="user_name" />
+                    <input type="text" placeholder="subject" name="user_suject" />
+                    <input type="text" placeholder="Email" name="user_email" />
+
                 </form>
             </div>
         </div>
