@@ -15,17 +15,20 @@ const About = () => {
           <hr />
         </h1>
         
-        <p className="a-sub">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit.
-           Cumque et unde quia. 
-        </p>
-        <p className="a-desc">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-           Natus excepturi dignissimos hic error, officiis,
-            quo non voluptatem ea, aperiam reprehenderit perspiciatis 
-            architecto inventore! 
-          At illo distinctio totam, minima quasi et?
-        </p>
+        
+        <div className="a-desc-wrapper">
+          <p className="a-sub">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Cumque et unde quia. 
+          </p>
+          <p className="a-desc">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Natus excepturi dignissimos hic error, officiis,
+              quo non voluptatem ea, aperiam reprehenderit perspiciatis 
+              architecto inventore! 
+            At illo distinctio totam, minima quasi et?
+          </p>
+        </div>
       </div>
     </div>
   )
