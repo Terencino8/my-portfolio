@@ -84,7 +84,12 @@ const Contact = () => {
                 </form>
             </div>
         </div>
+
+        <div className="c-footer">
+            <p> Copywrite @2022  </p>
+        </div>
     </div>
+      
   )
 }
 

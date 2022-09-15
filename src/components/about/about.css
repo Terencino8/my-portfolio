@@ -74,3 +74,45 @@ hr{
     height: 10rem;
     border-radius: 10px;
 }
+
+
+@media screen and (max-width: 480px){
+    .a{
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        height: 70vh;
+        /* margin-top: 50px; */
+    }
+
+    .a-left{
+        /* width: 100%; */
+        display: none;
+    }
+
+    .a-card{
+        /* height: 30vh; */
+        
+    }
+
+    .a-card.bg{
+        display: none;
+    }
+
+    .a-right{
+     padding: 20px;
+    }
+    .a-title{
+        margin-top: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .a-desc-wrapper{
+        height: 20rem;
+    }
+
+
+}

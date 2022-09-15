@@ -145,3 +145,35 @@
 }
 
 
+
+
+
+@media screen and (max-width: 480px){
+    .i{
+        flex-direction: column;
+    }
+
+    .i-left-wrapper{
+        padding: 10px;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        height: 100%;
+    }
+    .i-img{
+        height: 100%;
+        width: 150%;
+
+    }
+
+
+    .i-desc{
+        display: none;
+    }
+    .i-scroll-btn{
+        display: none;
+    }
+    .i-bg{
+        display: none;
+    }
+}
