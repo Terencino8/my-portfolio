@@ -1,0 +1,116 @@
+.p{
+    width: 30%;
+    height: 40vh;
+    margin: 20px 10px;
+    border: 2px solid rgb(243, 242, 242);
+    border-radius: 10px 10px 0 0;
+    overflow: hidden;
+    background-color: white;
+}
+
+.p-browser{
+    height: 20px;
+    background-color: rgb(243, 242, 242);
+    display: flex;
+    align-items: center;
+    position: sticky;
+    z-index: 2;
+}
+
+.p-circle{
+    width: 6px;
+    height: 6px;
+    background-color: black;
+    margin: 3px;
+    border-radius: 50%;
+}
+
+
+
+/* Product One */
+.one{
+    width: 100%;
+    transition: all 10s ease;
+
+}
+.one:hover{
+    transform: translateY(-100%);
+}
+
+
+
+
+
+/* Product two */
+
+.two{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+/* Product Three */
+
+.three{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+/* Product Four */
+.four{
+    width: 100%;
+    transition: all 10s ease;
+
+}
+.four:hover{
+    transform: translateY(-100%);
+}
+
+/* product five */
+
+.five{
+    height: 100%;
+    transition: all 10s ease;
+
+}
+
+.five:hover{
+    transform: translatex(-100%);
+}
+
+
+
+/* Product six */
+
+.six{
+    height: 100%;
+    transition: all 10s ease;
+
+}
+
+.six:hover{
+    transform: translatex(-100%);
+}
+
+
+@media screen and (max-width:480px ) {
+    .p{
+        width: 40%;
+        height: 20vh;
+    }
+
+    .four{
+        height: 100%;
+    }
+
+    .five{
+        height: 100%;
+    }
+
+    .six{
+        height: 100%;
+    }
+}

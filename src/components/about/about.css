@@ -91,14 +91,14 @@ hr{
         display: none;
     }
 
-    .a-card{
-        /* height: 30vh; */
+    /* .a-card{
+         height: 30vh; 
         
-    }
+    } */
 
-    .a-card.bg{
+    /* .a-card.bg{
         display: none;
-    }
+    } */
 
     .a-right{
      padding: 20px;

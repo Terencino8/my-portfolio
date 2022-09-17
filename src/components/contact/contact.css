@@ -69,7 +69,8 @@
     width: 100%;
     margin: 10px 0px;
     font-size: 14px;
-    padding-left: 10px;
+    padding: 10px;
+    border: 1px solid #333;
  }
 
 
@@ -136,3 +137,6 @@
       margin-top: 10px;
    }
 }
+
+
+

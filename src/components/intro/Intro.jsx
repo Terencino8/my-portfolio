@@ -25,11 +25,13 @@ const Intro = () => {
                     <div className="i-slogan">Lets make your Imagination Become a Reality</div>
                 </div>
             </div>
-            <div className="i-scroll-btn">Scroll</div>
+            
         </div>
         <div className="i-right">
-            <div className="i-bg"></div>
-        <img src={Me} alt="" className="i-img" />
+        <div className="i-bg"></div>
+            <div className="i-img-bor">
+                <img src={Me} alt="" className="i-img" />
+            </div>
         </div>
     </div>
   )

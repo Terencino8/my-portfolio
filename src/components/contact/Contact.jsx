@@ -75,10 +75,10 @@ const Contact = () => {
 
                 {/* Contact form To send mail  One*/}
                 <form ref={formRef} onSubmit={handleSubmit}>
-                    <input style={{backgroundColor: darkMode && "#333"}} type="text" placeholder="Name" name="user_name" />
-                    <input style={{backgroundColor: darkMode && "#333"}} type="text" placeholder="subject" name="user_subject" />
-                    <input style={{backgroundColor: darkMode && "#333"}} type="text" placeholder="Email" name="user_email" />
-                    <textarea style={{backgroundColor: darkMode && "#333"}} rows="5" placeholder="Message" name="message"></textarea>
+                    <input style={{backgroundColor: darkMode && "#333", color: darkMode && "white" }} type="text" placeholder="Name" name="user_name" />
+                    <input style={{backgroundColor: darkMode && "#333", color: darkMode && "white" }} type="text" placeholder="subject" name="user_subject" />
+                    <input style={{backgroundColor: darkMode && "#333", color: darkMode && "white" }} type="text" placeholder="Email" name="user_email" />
+                    <textarea style={{backgroundColor: darkMode && "#333", color: darkMode && "white" }} rows="10" placeholder="Message" name="message"></textarea>
                     <button>Submit</button>
                     {done && "Thank You For Reaching out I will Get in touch with You soonest"}
                 </form>
