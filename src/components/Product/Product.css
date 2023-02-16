@@ -61,7 +61,7 @@
 
 /* Product Four */
 .four{
-    width: 100%;
+    height: 100%;
     transition: all 10s ease;
 
 }
@@ -96,9 +96,9 @@
 }
 
 
-@media screen and (max-width:480px ) {
+@media screen and (max-width:720px ) {
     .p{
-        width: 40%;
+        width: 44%;
         height: 20vh;
     }
 

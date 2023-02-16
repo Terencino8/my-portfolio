@@ -1,5 +1,6 @@
 import "./intro.css"
 import Me from "../../img/me.jpg"
+import cv from "../../img/tcv.pdf"
 
 const Intro = () => {
   return (
@@ -24,7 +25,14 @@ const Intro = () => {
                     online store.
                     <div className="i-slogan">Lets make your Imagination Become a Reality</div>
                 </div>
+
+                <a href={cv} className="i-cv">
+                    <button >Check Out My CV</button>
+
+                </a>
+
             </div>
+
             
         </div>
         <div className="i-right">

@@ -1,5 +1,5 @@
 import "./about.css"
-import tbw from "../../img/tbw.jpg"
+import tbw2 from "../../img/tbw2.jpg"
 
 const About = () => {
   return (
@@ -7,7 +7,7 @@ const About = () => {
       <div className="a-left">
         <div className="a-card bg"></div>
         <div className="a-card">
-         <img src={tbw} alt="" className="a-img" />
+         <img src={tbw2} alt="" className="a-img" />
         </div>
       </div>
       <div className="a-right">

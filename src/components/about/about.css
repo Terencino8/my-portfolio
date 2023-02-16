@@ -76,7 +76,7 @@ hr{
 }
 
 
-@media screen and (max-width: 480px){
+@media screen and (max-width: 720px){
     .a{
         flex-direction: column;
         text-align: center;
