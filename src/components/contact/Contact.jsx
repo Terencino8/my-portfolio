@@ -63,7 +63,7 @@ const Contact = () => {
                         src={Address}
                         alt="" 
                         className="c-icon" />
-                        @27 Mafoluku Road Oshodi Lagos Nigeris
+                        @ Mafoluku Oshodi, Lagos, Nigeria
                     </div>
                    
                 </div>

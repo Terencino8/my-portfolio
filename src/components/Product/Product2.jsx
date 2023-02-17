@@ -1,6 +1,6 @@
 import React from 'react'
 import "./Product.css"
-import Tcard from "../../img/Tcard.png"
+import Tcard from "../../img/handyman.png"
 
 
 const Product = () => {

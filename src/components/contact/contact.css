@@ -1,5 +1,5 @@
  .c{
-    height: 110vh;
+    height: 100vh;
     position: relative;
  }
 
@@ -16,6 +16,7 @@
     padding: 50px;
     display: flex;
     height: 100%;
+    width: 100%;
  } 
  .c-left{
     flex: 1;
@@ -64,6 +65,7 @@
     margin: 10px 0px;
     font-size: 14px;
     padding-left: 10px;
+    outline: none;
  }
 
  /* input:{

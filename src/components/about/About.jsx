@@ -1,5 +1,5 @@
 import "./about.css"
-import tbw2 from "../../img/tbw2.jpg"
+import tbw2 from "../../img/aboutImg.jpg";
 
 const About = () => {
   return (
@@ -17,16 +17,20 @@ const About = () => {
         
         
         <div className="a-desc-wrapper">
-          <p className="a-sub">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Cumque et unde quia. 
-          </p>
-          <p className="a-desc">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-            Natus excepturi dignissimos hic error, officiis,
-              quo non voluptatem ea, aperiam reprehenderit perspiciatis 
-              architecto inventore! 
-            At illo distinctio totam, minima quasi et?
+          <p className="a-sub-one">
+            <h3>My Experiencies</h3>
+            I.t. Support Engineer with Experience in the use of Figma in creating responsive User Interfaces, Network engineering, configuration and administration skills, Proficient in web development using HTML CSS and Javascript Excellent client relation skills, troubleshooting and repairs of computer hardware, Excellent communication skills.
+            <br />
+            
+            <hr />
+            <br />
+            <h3>Extra Activities</h3>
+            <ul>
+              <li>Basketballer</li>
+              <li>Chorister</li>
+              <li>Basketballer</li>
+            </ul>
+
           </p>
         </div>
       </div>

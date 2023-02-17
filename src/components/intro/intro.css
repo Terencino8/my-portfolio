@@ -21,7 +21,7 @@
 
 .i-left-wrapper{
     padding: 50px;
-    height: 70%;
+    height: 90%;
     display: flex;
     flex-direction: column;
 }
@@ -60,17 +60,20 @@
 }
 
 @keyframes move{
-    25%{
+    20%{
         transform: translateY(-50px);
     }
-    50%{
+    40%{
         transform: translateY(-100px);
     }
-    75%{
+    60%{
         transform: translateY(-150px);
     }
-    100%{
+    80%{
         transform: translateY(-200px);
+    }
+    100%{
+        transform: translateY(-250px);
     }
 }
 
@@ -129,18 +132,15 @@
     justify-content: center;
     cursor: pointer;
     position: absolute;
-    
 
 }
 
 
-/* .i-img-bor:hover{
-    opacity: .7;
-} */
 
 .i-img-bor::before,.i-img-bor::after{
     content:"";
     border: 2px solid #59b256;
+
     position: absolute;
     width: 80%;
     height: 80%;

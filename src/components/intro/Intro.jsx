@@ -13,9 +13,9 @@ const Intro = () => {
                     <div className="i-title-wrapper">
                         <div className="i-title-item">Web Developer</div>
                         <div className="i-title-item">Product Designer</div>
-                        <div className="i-title-item">Front End Developer</div>
                         <div className="i-title-item">UI/UX Designer</div>
                         <div className="i-title-item">Hardware Engineer </div>
+                       <div className="i-title-item">Network Engineer </div>
 
                     </div>
                 </div>
@@ -28,8 +28,14 @@ const Intro = () => {
 
                 <a href={cv} className="i-cv">
                     <button >Check Out My CV</button>
-
                 </a>
+
+                {/* <div className="social-handles">
+                    <a href="" className="twitter"></a>
+                    <a href="" className="linkedin"></a>
+                    <a href="" className="github"></a>
+                    <a href="" className="whatsapp"></a>
+                </div> */}
 
             </div>
 
