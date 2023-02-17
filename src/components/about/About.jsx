@@ -26,9 +26,9 @@ const About = () => {
             <br />
             <h3>Extra Activities</h3>
             <ul>
-              <li>Basketballer</li>
-              <li>Chorister</li>
-              <li>Basketballer</li>
+              <li>Basketballing</li>
+              <li>Singing</li>
+              <li>programming</li>
             </ul>
 
           </p>

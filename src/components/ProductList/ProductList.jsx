@@ -12,11 +12,11 @@ const ProductList = () => {
     <div className='pl'>
         <div className="pl-texts">
             <h1 className="pl-title">
-                Creative Innovation By Terence
+                Creative Innovation By Terence 
                 <hr />
             </h1>
             <p className="pl-desc">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. In nesciunt odit necessitatibus, suscipit id nisi ab explicabo sed nostrum obcaecati reprehenderit, laboriosam quam voluptate perspiciatis nulla fugiat natus laborum modi.
+                Below are images of some projects i have worked on. 
             </p>
         </div>
         <div className="pl-list">
