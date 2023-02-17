@@ -30,12 +30,6 @@ const Intro = () => {
                     <button >Check Out My CV</button>
                 </a>
 
-                {/* <div className="social-handles">
-                    <a href="" className="twitter"></a>
-                    <a href="" className="linkedin"></a>
-                    <a href="" className="github"></a>
-                    <a href="" className="whatsapp"></a>
-                </div> */}
 
             </div>
 
