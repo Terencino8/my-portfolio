@@ -1,6 +1,6 @@
 import React from 'react'
 import "./Product.css"
-import Hsite from "../../img/Hsite.png"
+import wildlife from "../../img/wildlife.png"
 
 const Product = () => {
   return (
@@ -9,8 +9,9 @@ const Product = () => {
         <div className="p-circle"></div>
         <div className="p-circle"></div>
         <div className="p-circle"></div>
+        
       </div>
-      <img src={Hsite} alt=""  className='p-img three'/>
+      <img src={wildlife} alt=""  className='p-img three'/>
     </div>
   )
 }

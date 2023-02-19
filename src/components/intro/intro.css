@@ -21,7 +21,7 @@
 
 .i-left-wrapper{
     padding: 50px;
-    height: 90%;
+    height: 80%;
     display: flex;
     flex-direction: column;
 }
@@ -115,7 +115,7 @@
     width: 100%;
     height: 100%;
     border-radius: 50%;
-    /* object-fit: cover; */
+    object-fit: cover;
     position: absolute ;
 }
 
@@ -163,7 +163,7 @@
 
 
 
-@media screen and (max-width: 720px){
+@media screen and (max-width: 1000px){
     .i{
         flex-direction: column;
     }

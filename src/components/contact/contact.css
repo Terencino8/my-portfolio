@@ -79,6 +79,7 @@
     font-size: 14px;
     padding: 10px;
     border: 1px solid #333;
+    outline: none;
  }
 
 
@@ -89,6 +90,11 @@
      color:white;
      font-weight: 500;
      cursor: pointer;
+     outline: none;
+ }
+
+ form button:hover{
+   box-shadow: 0px 2px 4px 0px whitesmoke;
  }
 
 
